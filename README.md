@@ -2,6 +2,7 @@
 
 ## Project Overview
 This project implements **Customer Segmentation using the K-Means Clustering algorithm** on the Online Retail dataset. The aim is to group customers with similar purchasing behavior into meaningful clusters for business analysis and decision-making.
+
 ---
 
 ## Objective

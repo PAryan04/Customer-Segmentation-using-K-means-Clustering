@@ -32,12 +32,7 @@ X_scaled = StandardScaler().fit_transform(X)
 kmeans = KMeans(n_clusters=4, random_state=42, n_init=10)
 customer_df['Cluster'] = kmeans.fit_predict(X_scaled)
 
-cluster_labels = {
-    0: "Big Spenders",
-    1: "Frequent Shoppers",
-    2: "Low Value Customers",
-    3: "Occasional Bulk Buyers"
-}
+cluster_labels = {0: "Low Value Customers", 1: "Big Spenders", 2: "Frequent Shoppers", 3: "Occasional Bulk Buyers"}
 customer_df['ClusterLabel'] = customer_df['Cluster'].map(cluster_labels)
 
 # -------------------------------
